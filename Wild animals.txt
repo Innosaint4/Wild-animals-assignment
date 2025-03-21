@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main (){
+int N,M,i;
+printf("Enter number of domestic animals\n");
+scanf("%d",&N);
+char domestic_animals[N][50];
+printf("enter names of domestic animals\n");
+for(i=0;i<N;i++){
+    scanf("%s",domestic_animals[i]);
+}
+printf("Enter the number of wild animals\n");
+scanf("%d",&M);
+char wild[M][50];
+printf("Enter names of Wild animals\n");
+for(i=0;i<M;i++){
+    scanf("%s",wild[i]);
+}
+printf("List of all animals\n");
+for(i=0;i<N;i++){
+    printf("%s\n",domestic_animals[i]);
+}
+for(i=0;i<M;i++){
+    printf("%s\n",wild[i]);
+}
+return 0;
+}
